@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situs Web - Kontak</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h3 {
+            color: #3f51b5;
+            margin-top: 0;
+        }
+        .contact-form label, .contact-form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        .contact-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e8eaf6;
+            border-radius: 8px;
+        }
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #5d9cec;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3f51b5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Website Anjay</h1>
+        </div>
+
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="produk.html">Produk</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+
+        <div class="content">
+            <div class="article-title">
+                Halaman Kontak
+            </div>
+            
+            <div class="contact-form">
+                <h3>Kritik & Saran</h3>
+                <form action="#" method="post">
+                    <!-- Kolom Nama dan Email baru -->
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="kritik-saran">Pesan:</label>
+                    <textarea id="kritik-saran" name="kritik-saran" rows="8"></textarea>
+                    
+                    <input type="submit" value="Kirim">
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Informasi Kontak</h3>
+                <p><strong>WhatsApp:</strong> +62-813-8536-5912</p>
+                <p><strong>Email:</strong> 123240078@student.upnyk.ac.id</p>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            Copyright © 2016
+        </div>
+    </div>
+
+</body>
+</html>
